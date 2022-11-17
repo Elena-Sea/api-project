@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Connection Search</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" />
+        <!-- <link rel="stylesheet" href="../media/css/layout.css" /> -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="col-sm-11 col-sm-offset">
+
+                <header>
+                    <h1><a href="../">Transport</a></h1>
+                    <p>Swiss public transport API</p>
+
+                    <a href="../">Back to main</a>
+                </header>
+
+
+        <h3>Connection Search</h3>
+
+        <div class="row">
+            <div class="col-sm-5">
+
+                <form method="get" action="">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="from" name="from"
+                                    value="Bern" placeholder="From"
+                                    autocapitalize="on" />
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <input type="text" name="to" class="form-control"  id="to" value="Luzern" placeholder="To" autocapitalize="on" autofocus />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <input type="date" id="datetime" class="form-control" name="datetime"
+                                    value="2022-11-17"
+                                    placeholder="Date and time (optional)"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <input type="submit"  class="btn btn-primary" value="Search" />
+                                <a class="btn btn-link" href="">Clear</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+                <article>
+                    <table id="connection">
+                        <colgroup>
+                            <col width="150">
+                            <col width="120">
+                            <col width="120">
+                            <col width="120">
+                            <col width="120">
+                            <col width="120">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th align="left">Time</th>
+                                <th>
+                                    <img src="./images/train-solid.svg" alt="" width="20">
+                                    </th>
+                                <th>Platform</th>
+                                <th>Duration</th>
+                                <th align="left">Arrival</th>
+                                <th>Platform</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </article>
+
+                <footer class="footer">
+                    <hr>
+                    <p>Prepared by OSI <a href="http://opendata.ch/">Opendata.ch</a></p>
+                </footer>
+
+            </div>
+        </div>
+        <script src="connection.js"></script>
+    </body>
+
+</html>

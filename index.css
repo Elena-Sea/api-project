@@ -1,0 +1,67 @@
+h3 {
+    margin: 40px 0 20px;
+}
+
+.ui-widget,
+.ui-widget input {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.ui-autocomplete {
+    text-align: left;
+}
+
+strong {
+    color: #d10505;
+}
+
+.column {
+    float: right;
+}
+
+.media {
+    padding-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    padding: 8px;
+    line-height: 18px;
+    vertical-align: top;
+    border-bottom: 1px solid #DDD;
+}
+
+th:nth-child(n+3),
+td:nth-child(n+3) {
+    text-align: center;
+}
+
+/* .col-sm-8.col-sm-offset-2 {
+    width: 600px;
+} */
+
+article a {
+    display: flex;
+    flex-direction: column;
+}
+
+/* #connection {
+    display: none;
+}
+
+.vissible {
+    display: block;
+} */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+}

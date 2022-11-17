@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Stationboard Example - Transport API</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" />
+        <!-- <link rel="stylesheet" href="../media/css/layout.css" /> -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
+        <link rel="stylesheet" href="index.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="col-sm-10 col-sm-offset-2">
+
+                <header>
+                    <h1><a href="../">Transport</a></h1>
+                    <p>Swiss public transport API</p>
+
+                    <a href="../">Back to main</a>
+
+                </header>
+
+                <article>
+                    <h3>Swiss Stationboard</h3>
+                    <div class="ui-widget station">
+                        <input class="form-control" id="station" value="Lausanne" placeholder="Station" />
+                    </div>
+                    <div class="media">
+                    </div>
+
+                    <table id="stationboard">
+                        <colgroup>
+                            <col width="120">
+                            <col width="80">
+                            <col width="100">
+                            <col width="180">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th align="left">Time</th>
+                                <th>
+                                    <img src="./images/train-solid.svg" alt="" width="20">
+                                    </th>
+                                <th>Platform</th>
+                                <th align="left">To</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </article>
+
+                <footer class="footer">
+                    <hr>
+                    <p>Prepared by OSI <a href="http://opendata.ch/">Opendata.ch</a></p>
+                </footer>
+
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
