@@ -6,7 +6,7 @@ $(function () {
 
     function refresh() {
         if (station) {
-            $.get('http://transport.opendata.ch/v1/stationboard', { id: station, limit: 5 }, function (data) {
+            $.get('http://transport.opendata.ch/v1/stationboard', { id: station, limit: 10 }, function (data) {
                                 console.log(data);
 
                 $('#stationboard tbody').empty();
