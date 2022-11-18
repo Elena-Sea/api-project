@@ -4,6 +4,15 @@ body {
     background-repeat: no-repeat;
   background-size: cover;
 }
+.body-station {
+    background-image: linear-gradient(to right, rgba(255, 252, 127, 0.4), rgba(255, 252, 127, 0.4)), url(./images/IR-Dosto-RABe-512-Visualisierung-1_SBB-CFF-FFS_01-22.jpg);
+}
+.body-station-rain {
+    background-image: linear-gradient(to right, rgba(6, 25, 40, 0.4), rgba(6, 25, 40, 0.4)), url(./images/IR-Dosto-RABe-512-Visualisierung-1_SBB-CFF-FFS_01-22.jpg);
+}
+.body-station-snow {
+    background-image: linear-gradient(to right, rgba(6, 25, 40, 0.4), rgba(6, 25, 40, 0.4)), url(./images/IR-Dosto-RABe-512-Visualisierung-1_SBB-CFF-FFS_01-22.jpg);
+}
 
 table{
     background-color:rgb(232, 240, 255);
@@ -118,4 +127,14 @@ article a {
     position: fixed;
     bottom: 0;
     width: 40%;
+}
+
+canvas {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.vissible {
+    display: block;
 }
